@@ -687,6 +687,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4628579162664111097, guid: 5ecd0639fabf51a4d9cafddfe32bfad3,
+        type: 3}
+      propertyPath: m_Joystick
+      value: 
+      objectReference: {fileID: 7148477325103573610}
     - target: {fileID: 4628579162664111098, guid: 5ecd0639fabf51a4d9cafddfe32bfad3,
         type: 3}
       propertyPath: m_Name
@@ -700,3 +705,15 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 4659084352896361021}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7148477325103573610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2565955334112561239, guid: 5ecd0639fabf51a4d9cafddfe32bfad3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4659084352896361021}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6712cdfff5b2a554c9243c2b9bb4bb38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

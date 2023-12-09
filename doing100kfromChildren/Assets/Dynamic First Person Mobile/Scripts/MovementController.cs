@@ -93,17 +93,20 @@ namespace FirstPersonMobileTools.DynamicFirstPerson
         }
 
         private float m_speed
-        {
-            get 
-            { 
-            #if UNITY_EDITOR
-                return Input_Crouch? m_CrouchSpeed : Input_Sprint? m_RunSpeed : 
-                    Input_Movement.magnitude != 0 || External_Input_Movement.magnitude != 0? m_WalkSpeed : 0.0f; 
-            #elif UNITY_ANDROID
-                return Input_Crouch? m_CrouchSpeed : Input_Sprint? m_RunSpeed : Input_Movement.magnitude != 0? m_WalkSpeed : 0.0f; 
-            #endif
-            }
-        }
+{
+    get
+    {
+    #if UNITY_EDITOR
+        return Input_Crouch ? m_CrouchSpeed : Input_Sprint ? m_RunSpeed :
+            Input_Movement.magnitude != 0 || External_Input_Movement.magnitude != 0 ? m_WalkSpeed : 0.0f;
+    #elif UNITY_ANDROID
+        return Input_Crouch ? m_CrouchSpeed : Input_Sprint ? m_RunSpeed : Input_Movement.magnitude != 0 ? m_WalkSpeed : 0.0f;
+    #else
+        return 0.0f; // Add a default return statement
+    #endif
+    }
+}
+
 
     #if UNITY_EDITOR
         public Vector2 External_Input_Movement;
@@ -146,7 +149,8 @@ namespace FirstPersonMobileTools.DynamicFirstPerson
         private void Handle_InputMovement()
         {
 
-            Vector2 Input;
+            //Vector2 Input;
+            Vector2 Input = Vector2.zero;
     #if UNITY_EDITOR
             Input.x = Input_Movement.x == 0? External_Input_Movement.x : Input_Movement.x;
             Input.y = Input_Movement.y == 0? External_Input_Movement.y : Input_Movement.y;

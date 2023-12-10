@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -817,6 +817,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1278280650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6565316346229999608, guid: bacb8cf8caba239439ab90e4ea99005a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4904154521396428889}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efafc37115bc3b94dbccc304097e0935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1477848176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1250,18 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &2060454485 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4088334559887230038, guid: bacb8cf8caba239439ab90e4ea99005a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4904154521396428889}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6712cdfff5b2a554c9243c2b9bb4bb38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2078976296 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0656a7e5759ccaf40a463b72bbf3a345,
@@ -1412,6 +1436,96 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -10
       objectReference: {fileID: 0}
+    - target: {fileID: 4088334559842171567, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278280650}
+    - target: {fileID: 4088334559842171567, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Input_Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334559842171567, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnAfterClicked.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278280650}
+    - target: {fileID: 4088334559842171567, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnAfterClicked.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Input_Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334559842171567, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FirstPersonMobileTools.DynamicFirstPerson.MovementController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334559842171567, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnAfterClicked.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FirstPersonMobileTools.DynamicFirstPerson.MovementController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334559930004315, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnToggleOn.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278280650}
+    - target: {fileID: 4088334559930004315, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnToggleOff.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278280650}
+    - target: {fileID: 4088334559930004315, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnToggleOn.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Input_Crouch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334559930004315, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnToggleOff.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Input_Crouch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334559930004315, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnToggleOn.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FirstPersonMobileTools.DynamicFirstPerson.MovementController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334559930004315, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnToggleOff.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FirstPersonMobileTools.DynamicFirstPerson.MovementController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334560553444875, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278280650}
+    - target: {fileID: 4088334560553444875, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278280650}
+    - target: {fileID: 4088334560553444875, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Input_Sprint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334560553444875, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_Input_Sprint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334560553444875, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FirstPersonMobileTools.DynamicFirstPerson.MovementController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088334560553444875, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_OnButtonReleased.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FirstPersonMobileTools.DynamicFirstPerson.MovementController, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6565316346229999602, guid: bacb8cf8caba239439ab90e4ea99005a,
         type: 3}
       propertyPath: m_RootOrder
@@ -1467,6 +1581,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6565316346229999608, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_Joystick
+      value: 
+      objectReference: {fileID: 2060454485}
     - target: {fileID: 6565316346229999611, guid: bacb8cf8caba239439ab90e4ea99005a,
         type: 3}
       propertyPath: m_Name

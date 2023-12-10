@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class JetMovement : MonoBehaviour
 {
-    public Transform startPoint;
-    public Transform endPoint;
-    public GameObject jetPrefab; // Assign your Jet prefab in the Unity Editor
+    public GameObject jet; // Assign your Jet GameObject in the Unity Editor
     public float flyingSpeed = 5.0f;
     public float flyDuration = 20.0f;
     public float waitDuration = 40.0f;
@@ -25,19 +23,16 @@ public class JetMovement : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            // Move the Jet towards the endPoint using Lerp
-            float t = timer / flyDuration;
-            transform.position = Vector3.Lerp(startPoint.position, endPoint.position, t);
+            // Move the Jet forward
+            transform.Translate(Vector3.forward * flyingSpeed * Time.deltaTime);
 
-            // Check if the Jet has reached the endPoint
-            if (t >= 1.0f)
+            // Check if the flying duration is reached
+            if (timer >= flyDuration)
             {
-                // Reset timer and destroy the Jet
+                // Reset timer and wait for the specified duration before starting again
                 isFlying = false;
                 timer = 0.0f;
-                DestroyJet();
 
-                // Wait for the specified duration before starting again
                 Invoke("StartFlying", waitDuration);
             }
         }
@@ -45,20 +40,13 @@ public class JetMovement : MonoBehaviour
 
     void StartFlying()
     {
-        // Instantiate a new Jet at the start position
-        GameObject jetInstance = Instantiate(jetPrefab, startPoint.position, Quaternion.identity);
-        // Set the instantiated Jet as a child of this GameObject for movement continuity
-        jetInstance.transform.parent = transform;
+        // Reset the position of the Jet to the start position
+        jet.transform.position = transform.position;
+
+        // Set the Jet active
+        jet.SetActive(true);
 
         // Start flying
         isFlying = true;
-    }
-
-    void DestroyJet()
-    {
-        // Detach the Jet from this GameObject before destroying it
-        transform.DetachChildren();
-        // Destroy the Jet
-        Destroy(gameObject);
     }
 }

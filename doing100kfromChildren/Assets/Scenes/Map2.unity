@@ -1427,10 +1427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5982c26bf6db6b44badc3677684abbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPoint: {fileID: 0}
-  endPoint: {fileID: 0}
-  jetPrefab: {fileID: 0}
-  flyingSpeed: 5
+  jet: {fileID: 989751752}
+  flyingSpeed: 55
   flyDuration: 20
   waitDuration: 40
 --- !u!1 &1190643959

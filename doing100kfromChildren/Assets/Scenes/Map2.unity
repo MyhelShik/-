@@ -4110,6 +4110,11 @@ PrefabInstance:
       propertyPath: m_Joystick
       value: 
       objectReference: {fileID: 2060454485}
+    - target: {fileID: 6565316346229999609, guid: bacb8cf8caba239439ab90e4ea99005a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.425
+      objectReference: {fileID: 0}
     - target: {fileID: 6565316346229999611, guid: bacb8cf8caba239439ab90e4ea99005a,
         type: 3}
       propertyPath: m_Name

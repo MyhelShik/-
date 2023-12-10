@@ -8,10 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Game menu.unity
     guid: 03ad52718d8f76645b68a441ad435f5a
-  - enabled: 1
-    path: Assets/Scenes/Map.unity
-    guid: 712ae5dfa8f815b419807b4dc88643a9
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 870f897ed348b97408a32e91ddfd4e2f,
+      type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9eacffbb5fc6c11468f0da54153af7a5,
       type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,

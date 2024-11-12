@@ -40,6 +40,10 @@ public class JetMovement : MonoBehaviour
         jet.transform.position = transform.position;
 
         jet.SetActive(true);
+        
+        if(jet.SetActive == true)
+            jet.SetActive(true);
+            
 
         isFlying = true;
     }
